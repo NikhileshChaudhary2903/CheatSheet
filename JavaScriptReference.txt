@@ -236,7 +236,7 @@ Removes the first 2 elements of array
 
 20. For of loop
 
-const todos = [{},{},{}];
+const todos = [{id, text,isCompleted},{},{}];
 
 for(let todo of todos) {
 
@@ -256,3 +256,15 @@ const todoText = todos.map(function(todo) {
 });
 
 Map returns a new array
+
+Filter Function
+
+const todoCompleted = todos.filter(function(todo) {
+ return todo.isCompleted === true;
+});
+
+You can chain this further ie 
+const todoCompleted = todos.filter(function(todo) {
+ return todo.isCompleted === true;
+}).map();
+
