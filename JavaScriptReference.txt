@@ -8,9 +8,17 @@ console.log()/error();
 
 var isn't used anymore.
 
+String Templating
+
+const name = "nikhil";
+const age =26;
+console.log(`My name is ${name} and I am ${age}`);
+
+
+
 Data Types
 
-Undefined ( let z;)
+Undefined --> ( let z;)
 
 null typeof(null) -> Object ie const y = null;
 Number for float,integer,decimal
@@ -23,6 +31,13 @@ Boolean
 
 let str = "Hello World";
 str[0] = 'J'; // Error 
+
+String Methods
+
+str.split();
+   .substring(0);
+   .toUpperCase();
+   .toLowerCase();
 
 2. let str;
 
