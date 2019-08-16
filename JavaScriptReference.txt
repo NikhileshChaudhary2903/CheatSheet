@@ -181,6 +181,9 @@ const myConcat = (arr1,arr2) => {
 	arr1.concat(arr2);
 };
 
+const addNums = num1 => num1 + 5;
+
+
 16. Filter function on array
 
 let x = [1,2,3,-4,-5,-6];
@@ -209,7 +212,7 @@ console.log(squaredInts);
 
 arr2 = [.. arr1]; // just another copy
 
-18. Assign Variables from Objects
+18. Assign Variables from Objects (Destructuring)
 
 var voxel = {x : 3, y:7, z:6};
 
@@ -267,4 +270,21 @@ You can chain this further ie
 const todoCompleted = todos.filter(function(todo) {
  return todo.isCompleted === true;
 }).map();
+
+21. Document Object
+
+Single Element Selector
+document.getElementById('');
+	.querySelector('.classname');
+	.querySelector('#id');
+	.querySelector('html_element');
+
+Multiple Element Selector
+
+document.getElementsByClassName('classname');
+document.getElementsByTagName('tag');
+
+document.querySelectorAll(); --> use this
+
+
 
