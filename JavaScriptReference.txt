@@ -218,11 +218,26 @@ var y = voxel.y;
 
 Or use this
 
-Const {x: a, y : b, z:c} = voxel;
+const {x: a, y : b, z:c} = voxel;
+
+const person = {
+	
+ firstName: '',
+ lastName: '',
+ age : 
+ }
+
+const { firstName, lastName} = person;
 
 19. Const [ , , ... arr] = list
 
 Removes the first 2 elements of array
 
 
- 
+20. For of loop
+
+const todos = [{},{},{}];
+
+for(let todo of todos) {
+
+} 
