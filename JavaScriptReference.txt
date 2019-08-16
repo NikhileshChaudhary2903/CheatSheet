@@ -241,3 +241,18 @@ const todos = [{},{},{}];
 for(let todo of todos) {
 
 } 
+
+Or 
+
+todos.forEach(function(todo) {
+	
+ console.log(todo.prop);
+});
+
+Map Function
+
+const todoText = todos.map(function(todo) {
+ return todo.txt;
+});
+
+Map returns a new array
