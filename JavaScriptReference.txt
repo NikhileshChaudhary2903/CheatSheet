@@ -4,13 +4,16 @@ JavaScript Help
 - Confirms to ECMAScript Specification
 - Runs on the Client/Browser as well (Server Side NodeJS)
 
-console.log()/error()/warn();
+console.log()/error();
+
+var isn't used anymore.
 
 Data Types
 
-Undefined
-null typeof(null) -> Object
-Number
+Undefined ( let z;)
+
+null typeof(null) -> Object ie const y = null;
+Number for float,integer,decimal
 String
 Object
 Symbol
