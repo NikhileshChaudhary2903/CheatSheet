@@ -176,5 +176,24 @@ const sqArray = (arr) => {
 const squaredInts = sqArray(x);
 console.log(squaredInts);
 
+17. Copy of array
+
+arr2 = [.. arr1]; // just another copy
+
+18. Assign Variables from Objects
+
+Var voxel = {x : 3, y:7, z:6};
+
+Var x = vowel.x;
+Var y = voxel.y;
+
+Or use this
+
+Const {x: a, y : b, z:c} = voxel;
+
+19. Const [ , , ... arr] = list
+
+Removes the first 2 elements of array
+
 
  
