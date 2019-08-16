@@ -1,0 +1,180 @@
+JavaScript Help
+
+Data Types
+
+Undefined
+null typeof(null) -> Object
+Number
+String
+Object
+Symbol
+Boolean 
+
+1. Strings are immutable 
+
+let str = "Hello World";
+str[0] = 'J'; // Error 
+
+2. let str;
+
+console.log(typeof(str))
+Output: undefined
+
+4. let str = null;
+
+str += 100;
+console.log(str);
+
+Output: 100
+
+However
+
+let str;
+
+str += 100;
+console.log(str);
+
+Output: null
+
+5. Arrays 
+
+var myArray = ["Quincy",1];
+
+let array = [];
+console.log(typeof(array))
+
+Output: object
+
+let array = new Array();
+array.push(1);
+array.push(2);
+array.push(3);
+
+Remove using pop()
+Push using push()
+
+shift() removes the first element of array
+unshift() adds to the beginning of array
+
+array.unshift("first");
+
+6. Scopes
+
+var outerWear = "T-Shirt";
+
+function myFunc() {
+
+var outerWear = "Sweater";
+return outerWear;
+}
+
+console.log(myFunc());
+console.log(outerWear);
+
+7. If you don't return any value from a function it returns undefined
+
+8. Var myArray = []
+
+JSON.stringify(myArr) to convert to JSON
+
+9. Strict Equality Operator ===
+
+3 === '3' no type conversion
+
+String is converted to number if we use == equal Ie 3 =='3'
+
+10. JS Objects
+
+var myDog = {
+    name : "Camper",
+    legs : 4,
+    tails : 1,
+    friends : "everything"
+}
+
+console.log(myDog['friends']);
+
+myDog.name -> myDog['name'] same
+
+TO add properties 
+myDog['bark'] = sth;
+
+delete myDog.bark;
+
+11. How to check if object has property 
+
+myDog.hasOwnProperty('prop');
+
+for(var prop in myDog) {
+        console.log(prop + ":" + myDog[prop]);
+    }
+
+12. parseInt function
+
+Function convertToInteger(str) {
+
+ return parseInt(str);
+}
+
+If string can't be converted it return NaN
+var x = parseInt("12345string");
+console.log(x);
+Output: 12345 only when integer is starting me
+
+13. Var vs let
+
+Let doesn't allow you to declare var twice (duplicate)
+
+"use strict" on top of file or function
+
+Let has block scope or in the scope where it is defined
+
+Const is read only can't reassign to some other value
+const SENTENCE = "THIS ISNT COOL"
+
+const s = [2,4,5]
+
+S = []; // error
+
+s[0] = 4; // no error 
+
+14. To Prevent object mutation
+
+Object.freeze(prop);
+
+15. Anonymous Function
+
+const magic = () => {
+	
+};
+
+const myConcat = (arr1,arr2) => {
+	arr1.concat(arr2);
+};
+
+16. Filter function on array
+
+let x = [1,2,3,-4,-5,-6];
+
+const sqArray = (arr) => {
+  const squaredInts = arr.filter(num => Number.isInteger(num) && num > 0);
+  return squaredInts;  
+};
+
+const squaredInts = sqArray(x);
+console.log(squaredInts);
+
+Map Function
+
+let x = [1,2,3,-4,-5,-6];
+
+const sqArray = (arr) => {
+  const squaredInts = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x);
+  return squaredInts;  
+};
+
+const squaredInts = sqArray(x);
+console.log(squaredInts);
+
+
+ 
