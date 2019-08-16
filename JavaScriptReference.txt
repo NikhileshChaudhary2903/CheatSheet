@@ -63,6 +63,7 @@ Output: null
 5. Arrays 
 
 var myArray = ["Quincy",1];
+const arrays = new Array(1,23,43,132);
 
 let array = [];
 console.log(typeof(array))
@@ -206,10 +207,10 @@ arr2 = [.. arr1]; // just another copy
 
 18. Assign Variables from Objects
 
-Var voxel = {x : 3, y:7, z:6};
+var voxel = {x : 3, y:7, z:6};
 
-Var x = vowel.x;
-Var y = voxel.y;
+var x = vowel.x;
+var y = voxel.y;
 
 Or use this
 
