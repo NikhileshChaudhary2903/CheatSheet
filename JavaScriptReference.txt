@@ -83,6 +83,10 @@ unshift() adds to the beginning of array
 
 array.unshift("first");
 
+Array.isArray(arr) to check if arr is an array
+
+array.indexOf(e);
+
 6. Scopes
 
 var outerWear = "T-Shirt";
