@@ -1,5 +1,9 @@
 JavaScript Help
 
+- High Level Interpreted Programming Language
+- Confirms to ECMAScript Specification
+- Runs on the Client/Browser as well
+
 Data Types
 
 Undefined
