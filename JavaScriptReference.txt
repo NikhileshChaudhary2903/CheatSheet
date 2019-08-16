@@ -287,4 +287,12 @@ document.getElementsByTagName('tag');
 document.querySelectorAll(); --> use this
 
 
+22. Event listener
 
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', function(e) {
+e.preventDefault();
+console.log(e.target);
+
+}); 
