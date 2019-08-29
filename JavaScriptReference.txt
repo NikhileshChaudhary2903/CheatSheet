@@ -7,6 +7,7 @@ JavaScript Help
 console.log()/error();
 
 var isn't used anymore.
+Var has function scope not block scope.
 
 String Templating
 
